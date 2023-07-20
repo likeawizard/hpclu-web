@@ -1,0 +1,10 @@
+<html>
+  <script src="https://unpkg.com/htmx.org@1.9.3"></script>
+  <!-- have a button POST a click via AJAX -->
+	<h1>
+		Welcome to HPC@LU, my name is Xenon!
+	</h1>
+  <div hx-get="/specs" hx-target="#response" hx-swap="innerHTML">Specs</div>
+  <div hx-get="/contact" hx-target="#response" hx-swap="innerHTML">Contact</div>
+  <div id="response"></div>
+</html>
